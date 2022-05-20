@@ -1,0 +1,20 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "extends": "trybe-frontend",
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "sourceType": "module",
+    "requireConfigFile": false
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/jsx-max-depth" : 0,
+    "sonarjs/cognitive-complexity": ["error", 50]
+  }
+}
